@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="todelete.css">
+</head>
+<body>
+  <form action="todeleteothers.php" method="POST">
+  <div class="group-select-box">
+    <div>
+        <label>Select Type of Leave</label>
+    </div>
+    <select name="leaveType" id="myDropdown">
+      <option hidden>Select Type of Leave</option>
+      <option value="Vacation Leave">Vacation Leave</option>
+      <option value="Sick Leave">Sick Leave</option>
+      <option value="Others">Others</option>
+    </select>
+    <div id="textFieldContainer" >
+      <label class="other-inputs" for="myTextField">If others, kindly specific</label>
+      <input type="text" id="myTextField" name="myTextField"/>
+    </div>
+  </div>
+  <div class="sub-can-btn">
+    <button class="cancel-btn">Cancel</button>
+    <!--<button class="submit-btn" onclick="calculateHours()" >Submit</button>-->
+    <button class="submit-btn" name="submit" type="submit" >Submit</button>
+  </div>
+  </form>
+  <script src="todeleteothers.js"></script>
+</body>
+</html>
